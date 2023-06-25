@@ -7,14 +7,16 @@ This code provides the functionality to deploy machine learning models using a R
 3. Start the FastAPI server by running the command uvicorn app:app --reload in your terminal.
 4. The /status endpoint can be accessed by navigating to http://localhost:8000/status in your web browser.
 5. To make predictions using the deployed models, send a POST request to the /predict endpoint with the following JSON payload:
+
+
    {
-    "hf_pipeline": "<pipeline_type>",
-    "model_deployed_url": "<url_of_deployed_model>",
-    "inputs": "<input_data>",
-    "parameters": {
-        "parameter1": "<value1>",
-        "parameter2": "<value2>"
-    }
+       "hf_pipeline": "<pipeline_type>",
+       "model_deployed_url": "<url_of_deployed_model>",
+       "inputs": "<input_data>",
+       "parameters": {
+           "parameter1": "<value1>",
+           "parameter2": "<value2>"
+       }
     }
 
   where:
